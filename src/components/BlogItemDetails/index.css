@@ -1,9 +1,10 @@
-.blog-details-container {
+.blog-item-details-container {
   padding: 20px 100px 20px 100px;
 }
 @media screen and (max-width: 768px) {
-  .blog-details-container {
-    padding: 10px 25px 10px 25px;
+  .blog-item-details-container {
+    padding: 20px;
+    width: fit-content;
   }
 }
 .blog-author-container {

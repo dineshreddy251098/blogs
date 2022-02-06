@@ -12,7 +12,7 @@ class BlogList extends Component {
   }
 
   getBlogsListData = async () => {
-    const response = await fetch(' https://apis.ccbp.in/blogs')
+    const response = await fetch('https://apis.ccbp.in/blogs')
     const BlogsData = await response.json()
     const updatedBlogsData = BlogsData.map(eachItem => ({
       id: eachItem.id,
@@ -32,7 +32,7 @@ class BlogList extends Component {
       <div>
         {isLoading ? (
           <div testid="loader">
-            <Loader type="TailSpin" color="#00bff" width={50} height={50} />
+            <Loader type="TailSpin" color="#00bfff" width={50} height={50} />
           </div>
         ) : (
           <ul className="blogs-list-container">

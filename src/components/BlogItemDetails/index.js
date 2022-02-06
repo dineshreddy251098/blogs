@@ -40,13 +40,13 @@ class BlogItemDetails extends Component {
             <Loader type="TailSpin" width={50} height={50} color="#00Bfff" />
           </div>
         ) : (
-          <div className="blog-details-container">
+          <div className="blog-item-details-container">
             <h1>{title}</h1>
             <div className="blog-author-container">
               <img className="avatar-image" src={avatarUrl} alt="avatar" />
               <p className="author-name">{author}</p>
             </div>
-            <img className="image" src={imageUrl} alt="title" />
+            <img className="image" src={imageUrl} alt={title} />
             <p>{content}</p>
           </div>
         )}

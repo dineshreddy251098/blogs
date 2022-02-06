@@ -1,16 +1,22 @@
-.blog-item-container {
+.blog-item-card-container {
   list-style-type: none;
   border: 1px solid #8e8e8e;
   border-radius: 12px;
   margin: 20px;
   padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .blog-item-card-container {
+    margin: 8px;
+    padding: 8px;
+  }
+}
+.blog-item-container {
   display: flex;
 }
 @media screen and (max-width: 768px) {
   .blog-item-container {
     flex-direction: column;
-    margin: 8px;
-    padding: 8px;
   }
 }
 .blog-image {
@@ -23,7 +29,7 @@
     height: 130px;
   }
 }
-.blog-details-container {
+.blog-detail-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
